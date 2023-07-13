@@ -1,1 +1,122 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  letter-spacing: .4px;
+}
+
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-dark: #353535;
+  --color-dark-variant: #555555;
+
+  --transition: .4s ease;
+}
+
+h1, h2, h3, h4, h5 {
+  line-height: 120%;
+}
+
+h1 {
+  font-size: 48px;
+  color: var(--color-black);
+}
+
+h2 {
+  font-size: 28px;
+  color: var(--color-dark-variant);
+}
+
+h3 {
+  font-size: 26px;
+  color: var(--color-black);
+}
+
+h4 {
+  font-size: 19px;
+  color: var(--color-black);
+}
+
+h5 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 17px;
+  line-height: 140%;
+}
+
+.heading-p {
+  padding-top: 6rem;
+}
+
+a {
+  font-size: 24px;
+  color: var(--color-black);
+  text-decoration-color: var(--color-white);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-variant);
+  text-decoration-color: var(--color-dark-variant) !important;
+  text-underline-offset: 1rem;
+  text-decoration: underline;
+}
+
+.btn {
+  display: inline-block;
+  width: fit-content;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  color: var(--color-black);
+  border: 1px solid var(--color-dark-variant);
+  display: flex;
+  align-items: canter;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background: var(--color-dark-variant);
+  color: var(--color-white);
+}
+
+.btn-dark {
+  background: var(--color-dark);
+  color: var(--color-white);
+}
+
+.btn-dark:hover {
+  background: var(--color-black);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 90%;
+}

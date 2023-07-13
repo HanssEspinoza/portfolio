@@ -1,1 +1,10 @@
-<p>nav-bar works!</p>
+<nav>
+  <div class="container nav-container">
+    <a href="" class="logo">Hanss Espinoza</a>
+    <ul class="nav-links">
+      <li *ngFor="let item of navBarItems()">
+        <a [href]="[item.reference]">{{item.title}}</a>
+      </li>
+    </ul>
+  </div>
+</nav>

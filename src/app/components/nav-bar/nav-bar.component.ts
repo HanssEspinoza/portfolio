@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
+
+interface NavBarItem {
+  reference: string;
+  title: string;
+}
 
 @Component({
   selector: 'nav-bar-component',
@@ -9,5 +14,10 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./nav-bar.component.css']
 })
 export class NavBarComponent {
-
+  public navBarItems = signal<NavBarItem[]>([
+    { reference: '#about', title: 'About' },
+    { reference: '#experience', title: 'Experience' },
+    { reference: '#projects', title: 'Projects' },
+    { reference: '#contact', title: 'Contact' }
+  ]);
 }
